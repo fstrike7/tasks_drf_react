@@ -1,1 +1,0 @@
-web: cd client && npm install && npm run build && cd .. && python manage.py migrate && python manage.py collectstatic --noinput && gunicorn drf_api.wsgi
