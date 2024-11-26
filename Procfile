@@ -1,0 +1,1 @@
+web: python manage.py migrate && python manage.py collectstatic && gunicorn drf_api.wsgi

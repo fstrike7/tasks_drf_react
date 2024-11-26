@@ -1,0 +1,12 @@
+import uuid
+from django.db import models
+
+# Create your models here.
+class Task(models.Model):
+    title = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+    done = models.BooleanField(default=False)
+    user_id = models.UUIDField(default=uuid.uuid4, null=False, blank=False)
+
+    def __str__(self):
+        return self.title
