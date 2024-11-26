@@ -148,3 +148,5 @@ SPECTACULAR_SETTINGS = {
 }
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+CSRF_TRUSTED_ORIGINS = ["http://*", "https://web-production-bfe1.up.railway.app"]
